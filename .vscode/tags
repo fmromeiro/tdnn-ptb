@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+_build_vocab	../reader.py	/^def _build_vocab(filename):$/;"	kind:function	line:38
+_file_to_word_ids	../reader.py	/^def _file_to_word_ids(filename, word_to_id):$/;"	kind:function	line:50
+_read_words	../reader.py	/^def _read_words(filename):$/;"	kind:function	line:30
+decode_text	../ptb_word_cnn_keras.py	/^def decode_text(text):$/;"	kind:function	line:17
+id_to_word	../ptb_word_cnn_keras.py	/^id_to_word = {value: key for (key, value) in word_to_id.items()}$/;"	kind:variable	line:15
+model	../ptb_word_cnn_keras.py	/^model = keras.Sequential()$/;"	kind:variable	line:22
+path	../ptb_word_cnn_keras.py	/^path = "data\/simple-examples\/data"$/;"	kind:variable	line:6
+ptb_producer	../reader.py	/^def ptb_producer(raw_data, batch_size, num_steps, name=None):$/;"	kind:function	line:86
+ptb_raw_data	../reader.py	/^def ptb_raw_data(data_path=None):$/;"	kind:function	line:55
+ptb_word_cnn_keras.py	../ptb_word_cnn_keras.py	1;"	kind:file	line:1
+reader.py	../reader.py	1;"	kind:file	line:1
+x_test	../ptb_word_cnn_keras.py	/^x_test = test_data[:-1]$/;"	kind:variable	line:13
+x_train	../ptb_word_cnn_keras.py	/^x_train = train_data[:-1]$/;"	kind:variable	line:9
+x_valid	../ptb_word_cnn_keras.py	/^x_valid = valid_data[:-1]$/;"	kind:variable	line:11
+y_test	../ptb_word_cnn_keras.py	/^y_test = test_data[1:]$/;"	kind:variable	line:14
+y_train	../ptb_word_cnn_keras.py	/^y_train = train_data[1:]$/;"	kind:variable	line:10
+y_valid	../ptb_word_cnn_keras.py	/^y_valid = valid_data[1:]$/;"	kind:variable	line:12
