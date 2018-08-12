@@ -4,22 +4,22 @@ from tensorflow import keras
 import reader
 import numpy as np
 
-kernel_size = 20
+window_size = 20
 path = "data/simple-examples/data"
 
 train_data, valid_data, test_data, vocab_size, word_to_id = reader.ptb_raw_data(path)
 x_train = train_data[:-1]
-x_train = [x_train[i:i+kernel_size] for i in range(len(x_train)-kernel_size)]
+x_train = [x_train[i:i+window_size] for i in range(len(x_train)-window_size)]
 x_train = np.asarray(x_train)
 y_train = train_data[1:]
 y_train = keras.preprocessing.text.one_hot(y_train, vocab_size)
 x_valid = valid_data[:-1]
-x_valid = [x_valid[i:i+kernel_size] for i in range(len(x_valid)-kernel_size)]
+x_valid = [x_valid[i:i+window_size] for i in range(len(x_valid)-window_size)]
 x_valid = np.asarray(x_valid)
 y_valid = valid_data[1:]
 y_valid = np.asarray(y_valid)
 x_test = test_data[:-1]
-x_test = [x_test[i:i+kernel_size] for i in range(len(x_test)-kernel_size)]
+x_test = [x_test[i:i+window_size] for i in range(len(x_test)-window_size)]
 x_test = np.asarray(x_valid)
 y_test = test_data[1:]
 y_test = np.asarray(y_test)
@@ -31,7 +31,7 @@ def decode_text(text):
 print(x_train.shape)
 
 model = keras.Sequential()
-model.add(keras.layers.Embedding(vocab_size, 16, input_length = kernel_size))
+model.add(keras.layers.Embedding(vocab_size, 16, input_length = window_size))
 #model.add(keras.layers.Flatten())
 model.add(keras.layers.Conv1D(filters = 1, kernel_size = 3, padding = "same", activation = keras.activations.tanh))
 model.add(keras.layers.Dropout(0.2))
