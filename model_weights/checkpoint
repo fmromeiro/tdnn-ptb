@@ -1,3 +1,2 @@
-model_checkpoint_path: "conv2d_weights_14-49_02-09-2018"
-all_model_checkpoint_paths: "conv2d_weights_03-44_02-09-2018"
-all_model_checkpoint_paths: "conv2d_weights_14-49_02-09-2018"
+model_checkpoint_path: "conv2d_weights_14-57_03-09-2018"
+all_model_checkpoint_paths: "conv2d_weights_14-57_03-09-2018"

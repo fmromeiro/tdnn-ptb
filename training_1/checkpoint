@@ -1,0 +1,6 @@
+model_checkpoint_path: "cp.0012-5.63.ckpt"
+all_model_checkpoint_paths: "cp.0008-5.63.ckpt"
+all_model_checkpoint_paths: "cp.0009-5.62.ckpt"
+all_model_checkpoint_paths: "cp.0010-5.63.ckpt"
+all_model_checkpoint_paths: "cp.0011-5.62.ckpt"
+all_model_checkpoint_paths: "cp.0012-5.63.ckpt"
